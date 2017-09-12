@@ -1,0 +1,206 @@
+body {
+	background-color: #090d04;
+	/*color: #c3e595;*/
+	color: white;
+	font-family: 'Oxygen', sans-serif;
+	min-width: 300px;
+}
+/*Link Colors*/
+a:link {
+ color: #94D811;
+}
+
+a:visited {
+ color: #C8FF0E;
+}
+
+a:hover {
+ color: #C8FF0E;
+}
+
+a:active {
+    color: #253319;
+}
+
+ /*Navbar*/
+ .navbar-default {
+  background-color: #253319;
+  border-color: #4e8007;
+}
+.navbar-default .navbar-brand {
+  color: #94d811;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #c8ff0e;
+}
+.navbar-default .navbar-text {
+  color: #94d811;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #94d811;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #c8ff0e;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #253319;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #94d811;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #c8ff0e;
+  background-color: #4e8007;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+  background-color: #4e8007;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #c8ff0e;
+  background-color: #4e8007;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #c8ff0e;
+  background-color: #4e8007;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #c8ff0e;
+  background-color: #4e8007;
+}
+.navbar-default .navbar-toggle {
+  border-color: #4e8007;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #4e8007;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #94d811;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #94d811;
+}
+.navbar-default .navbar-link {
+  color: #94d811;
+}
+.navbar-default .navbar-link:hover {
+  color: #c8ff0e;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #94d811;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #c8ff0e;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #c8ff0e;
+    background-color: #4e8007;
+  }
+}
+/*./navbar*/
+
+/*btn-nav*/
+
+.btn-nav { 
+  color: #94D811; 
+  background-color: #253319; 
+  border-color: #4E8007;
+  border-radius: 25px; 
+} 
+ 
+.btn-nav:hover, 
+.btn-nav:focus, 
+.btn-nav:active, 
+.btn-nav.active, 
+.open .dropdown-toggle.btn-nav { 
+  color: #94D811; 
+  background-color: #4e8007; 
+  border-color: #4E8007; 
+} 
+ 
+.btn-nav:active, 
+.btn-nav.active, 
+.open .dropdown-toggle.btn-nav { 
+  background-image: none; 
+} 
+ 
+.btn-nav.disabled, 
+.btn-nav[disabled], 
+fieldset[disabled] .btn-nav, 
+.btn-nav.disabled:hover, 
+.btn-nav[disabled]:hover, 
+fieldset[disabled] .btn-nav:hover, 
+.btn-nav.disabled:focus, 
+.btn-nav[disabled]:focus, 
+fieldset[disabled] .btn-nav:focus, 
+.btn-nav.disabled:active, 
+.btn-nav[disabled]:active, 
+fieldset[disabled] .btn-nav:active, 
+.btn-nav.disabled.active, 
+.btn-nav[disabled].active, 
+fieldset[disabled] .btn-nav.active { 
+  background-color: #253319; 
+  border-color: #4E8007; 
+} 
+ 
+.btn-nav .badge { 
+  color: #253319; 
+  background-color: #94D811; 
+}
+
+footer .btn-nav {
+ border-radius: 0;
+}
+
+/*./btn-nav*/
+/*Navbar header and logo*/
+.navbar-brand {
+	font-family: 'Creepster', cursive;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+.webLogo {
+	height: 30px;
+	width: auto;
+	color: #c3e595;
+	display: inline;
+}
+
+/*Panel*/
+
+.panel-default {
+	border-color: #4e8007;
+}
+.panel-default > .panel-heading {
+	background-color: #253319;
+	color: white;
+}
+
+.panel-default > .panel-body {
+	color: black;
+	background-color: 
+}
+
+.spacer {
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: medium;
+}

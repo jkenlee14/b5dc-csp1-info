@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0">
+	<title>Welcome to CreepyCryptids!</title>
+
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Extra CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Creepster|Oxygen" rel="stylesheet">
+
+</head>
+<body>
+	<!-- Main Nav -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="container-fluid">
+				<a class="navbar-brand" href="#"><span><img class="webLogo img-responsive" src="img/ghost-monster.svg" alt="logo">Creepy Cryptids</span></a> <!-- Navbar Header -->
+				</div>
+			</div>
+			<!-- Display this when navbar collapses (for small devices) -->
+			<div class="collapse navbar-collapse" id="menu-navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+       				<li class="dropdown navbar-right">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+          				<ul class="dropdown-menu">
+            			<li><a href="#">Home</a></li>
+						<li><a href="#">Random Article</a></li>
+						<li><a href="#">Article List</a></li>
+						<li><a href="#">About Us</a></li>
+          				</ul>
+        			</li>
+     	 		</ul>
+			</div> <!-- ./navbar-collapse -->
+		</div>
+	</nav> <!-- ./navbar -->
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="col-xs-12">
+					<div class="container-fluid spacer">
+						
+						<figure>
+							<img class="img-responsive" src="http://placehold.it/900x400" alt="Placeholder Image">
+						</figure>
+					</div>
+				</div>
+				<div class="col-xs-12 container-fluid">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h1>Cryptid Name</h1></div>
+						<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</div>
+					</div>
+				</div>
+			</div> <!-- ./div col-md-8 -->
+
+			<div class="col-md-4">
+				
+				<div class="col-xs-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">About this Cryptid</div>
+						<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+							<ul class="pager">
+								<li><button class="btn btn-nav"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a></button></li>
+								<li><button class="btn btn-nav"><a href="#">Next <span class="glyphicon glyphicon-chevron-right"></span></a></button></li>
+							</ul>
+					</div>
+				</div>
+			</div> <!-- ./div col-md-4 -->
+		</div> <!-- ./row -->
+
+	</main>
+	<footer class="col-xs-12 col-md-12">
+		<div class="container-fluid" align="center">
+			<button class="btn btn-nav btn-xs" data-toggle="collapse" data-target="#comment"><span class="glyphicon glyphicon-chevron-down"></span></button>
+
+			<div id="comment" class="collapse" align="center">
+				<div class="container-fluid">
+					<!-- Disqus plugin -->
+					<div id="disqus_thread"></div>
+						<script>
+						/**
+						*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+						*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+						/*
+						var disqus_config = function () {
+						this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+						this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+						};
+						*/
+						(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://creepycryptids.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+						})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					<!-- Disqus plugin end -->
+				</div> <!-- ./div disqus -->
+			</div> <!-- #/comment -->
+		</div>
+
+	</footer>
+</body>
+</html>
