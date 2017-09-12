@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0">
 	<title>Welcome to CreepyCryptids!</title>
 
-		<!-- Latest compiled and minified CSS -->
+	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
@@ -16,9 +16,24 @@
 
 	<!-- Extra CSS -->
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
 	
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Creepster|Oxygen" rel="stylesheet">
+
+	<!-- FontAwesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- Favicon Link -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+	<!-- jVector Map -->
+
+	<link rel="stylesheet" href="./css/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+	<script src="./js/jquery-jvectormap-2.0.3.min.js"></script>
+	<script src="./js/jquery-jvectormap-world-mill.js"></script>
 
 </head>
 <body>
@@ -33,7 +48,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<div class="container-fluid">
-				<a class="navbar-brand" href="#"><span><img class="webLogo img-responsive" src="img/ghost-monster.svg" alt="logo">Creepy Cryptids</span></a> <!-- Navbar Header -->
+				<a class="navbar-brand animated bounce" href="#"><span><img class="webLogo img-responsive" src="img/ghost-monster.svg" alt="logo">Creepy Cryptids</span></a> <!-- Navbar Header -->
 				</div>
 			</div>
 			<!-- Display this when navbar collapses (for small devices) -->
@@ -57,10 +72,14 @@
 			<div class="col-md-8">
 				<div class="col-xs-12">
 					<div class="container-fluid spacer">
+						<div id="world-map">
+							
 						
-						<figure>
+<!-- 						<figure>
 							<img class="img-responsive" src="http://placehold.it/900x400" alt="Placeholder Image">
-						</figure>
+						</figure> -->
+						</div>
+						<script type="text/javascript" src="./js/draw-world.js"></script>
 					</div>
 				</div>
 				<div class="col-xs-12 container-fluid">
@@ -93,39 +112,48 @@
 				</div>
 			</div> <!-- ./div col-md-4 -->
 		</div> <!-- ./row -->
+		<div class="col-xs-12 col-md-12 commentSection spacer">
+			<div class="container-fluid" align="center">
+				<button class="btn btn-nav btn-xs" data-toggle="collapse" data-target="#comment"><span class="glyphicon glyphicon-chevron-down"></span></button>
 
-	</main>
-	<footer class="col-xs-12 col-md-12">
-		<div class="container-fluid" align="center">
-			<button class="btn btn-nav btn-xs" data-toggle="collapse" data-target="#comment"><span class="glyphicon glyphicon-chevron-down"></span></button>
-
-			<div id="comment" class="collapse" align="center">
-				<div class="container-fluid">
-					<!-- Disqus plugin -->
-					<div id="disqus_thread"></div>
-						<script>
-						/**
-						*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-						*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-						/*
-						var disqus_config = function () {
-						this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-						this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-						};
-						*/
-						(function() { // DON'T EDIT BELOW THIS LINE
-						var d = document, s = d.createElement('script');
-						s.src = 'https://creepycryptids.disqus.com/embed.js';
-						s.setAttribute('data-timestamp', +new Date());
-						(d.head || d.body).appendChild(s);
-						})();
-						</script>
-						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-					<!-- Disqus plugin end -->
-				</div> <!-- ./div disqus -->
-			</div> <!-- #/comment -->
+				<div id="comment" class="collapse" align="center">
+					<div class="container-fluid">
+						<!-- Disqus plugin -->
+						<div id="disqus_thread"></div>
+							<script>
+							/**
+							*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+							*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+							
+							var disqus_config = function () {
+							this.page.url = http://creepycryptids.x10host.com/;  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+							
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://creepycryptids.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						<!-- Disqus plugin end -->
+					</div> <!-- ./div disqus -->
+				</div> <!-- #/comment -->
+			</div>
 		</div>
+	</main>
+		<footer class="container-fluid siteFoot" align="center">
+			<p>All Images are Property of their Respective Owners</p>
+			<p>Creepy Cryptids &copy; 2017 | John Kenneth Lee</p>
+			<ul class="socialMedia">
+				<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+				<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+				<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</a></li>
+				<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
+			</ul>
 
-	</footer>
+		</footer>
 </body>
 </html>
