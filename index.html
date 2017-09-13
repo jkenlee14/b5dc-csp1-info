@@ -60,15 +60,22 @@
 			<!-- Display this when navbar collapses (for small devices) -->
 			<div class="collapse navbar-collapse" id="menu-navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-       				<li class="dropdown navbar-right">
-          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
-          				<ul class="dropdown-menu">
+       				<!-- <li class="dropdown navbar-right"> -->
+          				<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a> -->
+          				<!-- <ul class="dropdown-menu"> -->
             			<li><a href="./index.html">Home</a></li>
 						<li><a href="#" onclick="randomLink()">Random Article</a></li>
-						<li><a href="./articlelist.html">Article List</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Article List <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="./bigfoot.html">Bigfoot</a></li>
+							<li><a href="./thunderbird.html">Thunderbird</a></li>
+							<li><a href="./deathworm.html">Deathworm</a></li>
+							<li><a href="./aswang.html">Aswang</a></li>
+						</ul>
+						</li>
 						<li><a href="./aboutus.html">About Us</a></li>
-          				</ul>
-        			</li>
+          				<!-- </ul> -->
+        			<!-- </li> -->
      	 		</ul>
 			</div> <!-- ./navbar-collapse -->
 		</div>
@@ -235,21 +242,23 @@
 				
 				<div class="col-xs-12">
 					<div class="panel panel-default">
-						<div class="panel-heading">About this Cryptid</div>
+						<div class="panel-heading">Cryptids on Twitter</div>
 						<div class="panel-body">
 						<div class="container-fluid spacer" align="center">
-							
+						
+						<!-- Twitter Integration -->
+						</div class="twitter"> 
+					    	            <a class="twitter-timeline"  href="https://twitter.com/hashtag/Cryptids" data-widget-id="908062382798233600">#Cryptids Tweets</a>
+            							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            				
+            				<div class="text-center">
+            					<a href="https://twitter.com/intent/tweet?button_hashtag=Cryptids" class="twitter-hashtag-button" data-size="large" data-show-count="false">Tweet #Cryptids</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            				</div>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-							<ul class="pager">
+<!-- 							<ul class="pager">
 								<li><button class="btn btn-nav"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a></button></li>
 								<li><button class="btn btn-nav"><a href="#">Next <span class="glyphicon glyphicon-chevron-right"></span></a></button></li>
-							</ul>
+							</ul> -->
 					</div>
 				</div>
 			</div> <!-- ./div col-md-4 -->

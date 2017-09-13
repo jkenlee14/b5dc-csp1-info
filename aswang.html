@@ -60,15 +60,22 @@
 			<!-- Display this when navbar collapses (for small devices) -->
 			<div class="collapse navbar-collapse" id="menu-navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-       				<li class="dropdown navbar-right">
-          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
-          				<ul class="dropdown-menu">
+       				<!-- <li class="dropdown navbar-right"> -->
+          				<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a> -->
+          				<!-- <ul class="dropdown-menu"> -->
             			<li><a href="./index.html">Home</a></li>
 						<li><a href="#" onclick="randomLink()">Random Article</a></li>
-						<li><a href="./articlelist.html">Article List</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Article List <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="./bigfoot.html">Bigfoot</a></li>
+							<li><a href="./thunderbird.html">Thunderbird</a></li>
+							<li><a href="./deathworm.html">Deathworm</a></li>
+							<li><a href="./aswang.html">Aswang</a></li>
+						</ul>
+						</li>
 						<li><a href="./aboutus.html">About Us</a></li>
-          				</ul>
-        			</li>
+          				<!-- </ul> -->
+        			<!-- </li> -->
      	 		</ul>
 			</div> <!-- ./navbar-collapse -->
 		</div>
@@ -156,7 +163,7 @@
 						<p>An Aswang (or Asuwang) is a shapeshifting monster in Filipino folklore usually possessing a combination of the traits of either a vampire, a ghoul, a warlock/witch, or different species of werebeast, or even all of them together. It is the subject of a wide variety of myths and stories. Spanish colonists noted that the Aswang was the most feared among the mythical creatures of the Philippines, even in the 16th century. The myth of the aswang is well known throughout the Philippines. It is especially popular in the Visayas, southern parts of Luzon, and parts of Mindanao. Other regional names for the aswang include "tik-tik", "bayot", "wak-wak", "sok-sok" and "kling-kling". Anthropologists believe that the Aswang belief came from the mythmaking of the Spaniards to keep the population under control. Through the encomienda system, a town is arranged into easy-to-manage layers, and labeling those who lived too far away as tulisans (dissenters). To scare off the Filipinos, stories of Aswangs living in the outskirts of the forests were spread in towns to keep everyone in groups and maintain control.</p></div>
 							<ul class="pager">
 								<li><button class="btn btn-nav"><a href="./deathworm.html"><span class="glyphicon glyphicon-chevron-left"></span> Previous</a></button></li>
-								<li><button class="btn btn-nav disabled"><a href="#">Next <span class="glyphicon glyphicon-chevron-right"></span></a></button></li>
+								<li><button class="btn btn-nav"><a href="#">Next <span class="glyphicon glyphicon-chevron-right"></span></a></button></li>
 							</ul>
 					</div>
 				</div>
