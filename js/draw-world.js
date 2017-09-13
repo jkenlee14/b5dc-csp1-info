@@ -27,7 +27,7 @@ $(function(){
 
     onMarkerClick: function(events, index) {
       // console.log(markers[index].weburl);
-        window.location = "http://creepycryptids.x10host.com" +markers[index].weburl;
+        window.location = "https://jkenlee14.github.io/b5dc-csp1-info" +markers[index].weburl;
     }
   });
 });
