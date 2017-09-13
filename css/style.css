@@ -3,7 +3,7 @@ body {
 	/*color: #c3e595;*/
 	color: white;
 	font-family: 'Oxygen', sans-serif;
-	min-width: 300px;
+	min-width: 400px;
 }
 /*Link Colors*/
 a:link {
@@ -209,6 +209,10 @@ footer{
 	background-color: #0F120B;
 }
 
+footer p {
+  margin-top: 15px;
+}
+
 .socialMedia {
 	list-style: none;
 	border-top: 1px solid white;
@@ -224,4 +228,17 @@ footer{
 #world-map {
 	width: 100%;
 	height: 65vh;
+}
+
+.cryptidPortrait {
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+.carousel .carousel-caption {
+  visibility: hidden;
+}
+
+.carousel:hover .carousel-caption {
+  visibility: visible;
 }
