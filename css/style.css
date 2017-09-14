@@ -270,6 +270,21 @@ h1 {
  color: #c3e595;
 }
 
-/*.twitter {
-  height: 50vh;
-}*/
+.profpic {
+  border-radius: 50%;
+  height: 20vh;
+  width: auto;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.panel-footer{
+  color:black;
+}
+
+.abtMe{
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
